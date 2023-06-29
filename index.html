@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: blue;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+    color: #54423B;
+    font-size: 22px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 style="color: #FDF40B; font-size: 42px;"><img src="Shop New Products Website Banner Brown, White, Tan.png" width="764" height="286" alt=""/></h1>
+</div>
+
+<div class="topnav">
+  <a href="index.html">HOME</a>
+  <a href="sale.html">SALE</a>
+  <a href="repair.html">REPAIR</a>
+  <a href="hire.html">HIRE</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>HOME</h2>
+    <p><img src="https://cdn.pixabay.com/photo/2015/03/21/14/34/silhouette-683751_1280.jpg" width="508" height="325">&nbsp;</p>
+    <p>&nbsp;</p>
+  </div>
+  
+  <div class="column">
+    <p>Step into the world of Bikes4U, the perfect place for everything related to biking! No matter if you're a passionate cyclist, a leisurely rider, or a newcomer eager to begin a thrilling journey on two wheels, our website is designed to meet all your cycling requirements.</p>
+    <p>At Bikes4U, we grasp the exhilaration and liberation that accompanies bike riding. That's why we've developed a complete virtual hub, offering a diverse array of tools, merchandise, and services to elevate your cycling adventure. From top-notch bicycles to necessary gear, expert guidance to captivating content, we've got everything you need.</p>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
